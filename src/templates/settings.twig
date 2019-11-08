@@ -1,0 +1,30 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Product Feed plugin for Craft CMS 3.x
+ *
+ * Product Feed Settings.twig
+ *
+ * @author    Kurious Agency
+ * @copyright Copyright (c) 2019 Kurious Agency
+ * @link      https://kurious.agency
+ * @package   ProductFeed
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("kuriousagency\\productfeed\\assetbundles\\productfeed\\ProductFeedAsset") %}
+
+{{ forms.textField({
+    label: 'Feed Template',
+    instructions: 'Enter the path to the template you would like to use for your product feed',
+    id: 'template',
+    name: 'template',
+    value: settings['template'],
+	required: true,
+	errors: settings.getErrors('template'),
+})
+	
+}}
