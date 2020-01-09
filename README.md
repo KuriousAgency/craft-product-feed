@@ -1,8 +1,6 @@
 # Product Feed plugin for Craft CMS 3.x
 
-Craft CMS plugin for processing large product feeds via the console
-
-![Screenshot](resources/img/plugin-logo.png)
+Craft CMS plugin for processing large product feeds from the console and storing in cache.
 
 ## Requirements
 
@@ -24,20 +22,22 @@ To install the plugin, follow these instructions.
 
 ## Product Feed Overview
 
--Insert text here-
+Create a cached version of a product feed using a console command. 
 
 ## Configuring Product Feed
 
--Insert text here-
+Enter the path to the template that will be used for the feed.
 
 ## Using Product Feed
 
--Insert text here-
+**To process the feed use the following console command**
 
-## Product Feed Roadmap
+`./craft product-feed/feed/run`
 
-Some things to do, and ideas for potential features:
+**You can now access the cached version of the feed in your template:**
 
-* Release it
+```twig
+{{ craft.productFeed.getFeed|raw }}
+```
 
 Brought to you by [Kurious Agency](https://kurious.agency)
