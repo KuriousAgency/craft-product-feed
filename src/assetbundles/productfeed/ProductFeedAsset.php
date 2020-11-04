@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Kurious Agency
  */
 
-namespace kuriousagency\productfeed\assetbundles\ProductFeed;
+namespace kuriousagency\productfeed\assetbundles\productfeed;
 
 use Craft;
 use craft\web\AssetBundle;

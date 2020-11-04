@@ -2,7 +2,7 @@
     "name": "kuriousagency/product-feed",
     "description": "Craft CMS plugin for processing large product feeds via the console",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "craft",
         "cms",
